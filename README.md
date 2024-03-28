@@ -42,3 +42,4 @@ Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining 
 Alias: `npm run e`
 
 Open a prompt for choosing which exercise you'd like to run.
+All the best 🤞
