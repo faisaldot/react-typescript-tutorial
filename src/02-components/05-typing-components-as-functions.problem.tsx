@@ -1,20 +1,19 @@
 import React from "react";
 
-interface Props {
+export const Button: React.FC<{ className: string }> = ({
+  className,
+}: {
   className: string;
-}
-
-/* @ts-expect-error */
-export const Button = (props: Props) => {
+}) => {
   return {
-    ohDear: "123",
+    sayHi: "hi",
   };
 };
 
 const Parent = () => {
   return (
     <>
-      <Button className="my-class"></Button>
+      <Button className="x"></Button>
     </>
   );
 };
