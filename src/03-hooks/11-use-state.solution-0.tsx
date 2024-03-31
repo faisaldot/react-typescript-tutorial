@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-type Tag = {
+interface Tag {
   id: number;
   value: string;
-};
+}
 
-export const Tags = () => {
+export default function Tags() {
   const [tags, setTags] = useState<Tag[]>([]);
   return (
-    <div>
+    <>
       {tags.map((tag) => {
         return <div key={tag.id}>{tag.value}</div>;
       })}
@@ -25,6 +25,6 @@ export const Tags = () => {
       >
         Add Tag
       </button>
-    </div>
+    </>
   );
-};
+}
